@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Worksheet Matematika — Paket Tryout 1</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="worksheet">
+    <header class="hero">
+      <div class="hero-mark" aria-hidden="true">∑</div>
+      <div>
+        <p class="eyebrow">LEMBAR KERJA PESERTA DIDIK · SD/MI</p>
+        <h1>Worksheet Matematika</h1>
+        <p class="subtitle">Soal Tryout Paket 1</p>
+      </div>
+      <div class="score-badge" aria-label="Nilai saat ini" aria-live="polite">
+        <span>Nilai</span>
+        <strong id="topScore">—</strong>
+      </div>
+    </header>
+
+    <section class="student-info" aria-label="Identitas siswa">
+      <label>Nama <input id="studentName" name="nama" type="text" autocomplete="name" required></label>
+      <label>Kelas <input id="studentClass" name="kelas" type="text" required></label>
+      <label>Tanggal <input id="studentDate" name="tanggal" type="date" required></label>
+      <label>No. Absen <input id="studentNumber" name="absen" type="text" inputmode="numeric" required></label>
+    </section>
+
+    <div class="instructions"><strong>Petunjuk:</strong> Bacalah soal dengan teliti. Pilih atau beri tanda centang pada jawaban yang tepat. Untuk soal bertanda <strong>(jawaban lebih dari satu)</strong>, pilih semua jawaban yang benar.</div>
+
+    <section class="question-section">
+      <h2><span>01</span> Bilangan dan pecahan</h2>
+      <article class="question">
+        <p class="prompt"><b>1.</b> Gambar yang memiliki pecahan senilai dengan <span class="fraction"><span>1</span><span>2</span></span> adalah …</p>
+        <div class="pie-options" id="pieOptions" aria-label="Pilihan gambar pecahan"></div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>2.</b> Berikut hasil panen buah di halaman belakang rumah Kakek.</p>
+        <div class="table-wrap">
+          <table class="fruit-table">
+            <thead><tr><th>Buah</th><th>Mangga</th><th>Jeruk</th><th>Rambutan</th><th>Pepaya</th></tr></thead>
+            <tbody><tr><th>Berat (kg)</th><td>2 <span class="fraction"><span>1</span><span>4</span></span></td><td>2 <span class="fraction"><span>1</span><span>2</span></span></td><td>3 <span class="fraction"><span>1</span><span>2</span></td><td>1 <span class="fraction"><span>1</span><span>4</span></span></td></tr></tbody>
+          </table>
+        </div>
+        <p class="subprompt">Beri tanda centang (✓) pada pernyataan yang benar.</p>
+        <div class="check-list">
+          <label><input type="checkbox"> Hasil panen paling banyak adalah rambutan.</label>
+          <label><input type="checkbox"> Hasil panen paling sedikit adalah pepaya.</label>
+          <label><input type="checkbox"> Urutan buah dari yang paling berat adalah rambutan, jeruk, mangga, pepaya.</label>
+          <label><input type="checkbox"> Urutan buah dari yang paling ringan adalah pepaya, jeruk, mangga, rambutan.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>3.</b> Di sebuah kelas, 50% murid menyukai Matematika, 0,25 bagian menyukai IPA, dan sisanya menyukai olahraga. Tentukan Benar atau Salah.</p>
+        <div class="table-wrap"><table class="answer-table"><thead><tr><th>Pernyataan</th><th>Benar</th><th>Salah</th></tr></thead><tbody>
+          <tr><td>Siswa yang menyukai IPA adalah <span class="fraction"><span>1</span><span>4</span></span> kelas.</td><td><input type="radio" name="q3a" aria-label="Benar"></td><td><input type="radio" name="q3a" aria-label="Salah"></td></tr>
+          <tr><td>Persentase siswa yang menyukai Matematika dan IPA adalah 75%.</td><td><input type="radio" name="q3b" aria-label="Benar"></td><td><input type="radio" name="q3b" aria-label="Salah"></td></tr>
+          <tr><td>Persentase siswa yang menyukai olahraga adalah 50%.</td><td><input type="radio" name="q3c" aria-label="Benar"></td><td><input type="radio" name="q3c" aria-label="Salah"></td></tr>
+          <tr><td>Siswa yang menyukai olahraga adalah <span class="fraction"><span>1</span><span>4</span></span> bagian.</td><td><input type="radio" name="q3d" aria-label="Benar"></td><td><input type="radio" name="q3d" aria-label="Salah"></td></tr>
+        </tbody></table></div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>4.</b> Hasil dari 2.000 − 25 × 250 : 5 adalah …</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q4"> A. 500</label><label><input type="radio" name="q4"> B. 750</label>
+          <label><input type="radio" name="q4"> C. 1.250</label><label><input type="radio" name="q4"> D. 2.000</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>5.</b> Pak Burhan memanen 125 kg rambutan. Sebanyak 35 kg diberikan kepada tetangga dan sisanya dimasukkan ke dalam 9 keranjang sama banyak. Setiap keranjang berisi … kg.</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q5"> A. 9</label><label><input type="radio" name="q5"> B. 10</label>
+          <label><input type="radio" name="q5"> C. 11</label><label><input type="radio" name="q5"> D. 15</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>6.</b> Satria menyalin buku bacaan yang sangat ia sukai. Hari pertama ia menyelesaikan <span class="fraction"><span>2</span><span>7</span></span> bagian dan hari kedua <span class="fraction"><span>3</span><span>14</span></span> bagian. Total bagian buku yang sudah disalin Satria adalah …</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q6"> A. <span class="fraction"><span>1</span><span>2</span></span></label><label><input type="radio" name="q6"> B. <span class="fraction"><span>3</span><span>7</span></span></label>
+          <label><input type="radio" name="q6"> C. <span class="fraction"><span>5</span><span>14</span></span></label><label><input type="radio" name="q6"> D. <span class="fraction"><span>9</span><span>14</span></span></label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>7.</b> Beri tanda centang (✓) pada operasi hitung yang benar. <em>(Jawaban benar lebih dari satu)</em></p>
+        <div class="check-list">
+          <label><input type="checkbox"> Hasil dari perkalian <span class="fraction"><span>2</span><span>3</span></span> × 6 adalah 4.</label>
+          <label><input type="checkbox"> Hasil dari perkalian 7 × <span class="fraction"><span>3</span><span>7</span></span> adalah 1.</label>
+          <label><input type="checkbox"> Hasil dari pembagian <span class="fraction"><span>5</span><span>8</span></span> : 5 adalah <span class="fraction"><span>1</span><span>8</span></span>.</label>
+          <label><input type="checkbox"> Hasil dari pembagian <span class="fraction"><span>4</span><span>9</span></span> : 2 adalah <span class="fraction"><span>2</span><span>9</span></span>.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>8.</b> Febri bersepeda setiap hari dengan jarak tempuh 7 <span class="fraction"><span>2</span><span>3</span></span> km. Tentukan Benar atau Salah untuk setiap pernyataan.</p>
+        <div class="table-wrap"><table class="answer-table"><thead><tr><th>Pernyataan</th><th>Benar</th><th>Salah</th></tr></thead><tbody>
+          <tr><td>Jarak yang ditempuh Febri selama 2 hari adalah 15 km.</td><td><input type="radio" name="q8a" aria-label="Benar"></td><td><input type="radio" name="q8a" aria-label="Salah"></td></tr>
+          <tr><td>Jarak yang ditempuh Febri selama 3 hari adalah 20 km.</td><td><input type="radio" name="q8b" aria-label="Benar"></td><td><input type="radio" name="q8b" aria-label="Salah"></td></tr>
+          <tr><td>Jarak yang ditempuh Febri selama 4 hari adalah 30 <span class="fraction"><span>2</span><span>3</span></span> km.</td><td><input type="radio" name="q8c" aria-label="Benar"></td><td><input type="radio" name="q8c" aria-label="Salah"></td></tr>
+          <tr><td>Jarak yang ditempuh Febri selama 5 hari adalah 38 <span class="fraction"><span>1</span><span>3</span></span> km.</td><td><input type="radio" name="q8d" aria-label="Benar"></td><td><input type="radio" name="q8d" aria-label="Salah"></td></tr>
+        </tbody></table></div>
+      </article>
+    </section>
+
+    <section class="question-section">
+      <h2><span>02</span> Bangun datar dan pengukuran</h2>
+      <article class="question">
+        <p class="prompt"><b>9.</b> Perhatikan gambar segitiga berikut. Beri tanda centang pada pernyataan yang benar. <em>(Jawaban benar lebih dari satu)</em></p>
+        <svg class="geometry triangle" viewBox="0 0 220 150" role="img" aria-label="Segitiga dengan titik A, B, dan C">
+          <path d="M45 125 L20 20 L190 125 Z" fill="none" stroke="currentColor" stroke-width="3" />
+          <text x="8" y="17">B</text><text x="30" y="145">A</text><text x="196" y="145">C</text>
+        </svg>
+        <div class="check-list">
+          <label><input type="checkbox"> Memiliki tiga sisi, yaitu AB, BC, dan AC.</label>
+          <label><input type="checkbox"> Ketiga sisinya tidak sama panjang.</label>
+          <label><input type="checkbox"> Sudutnya tidak sama besar.</label>
+          <label><input type="checkbox"> Ketiga sudutnya sama besar.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>10.</b> Perhatikan gambar trapesium sama kaki berikut. Tentukan Benar atau Salah.</p>
+        <svg class="geometry trapezoid" viewBox="0 0 240 145" role="img" aria-label="Gambar trapesium sama kaki">
+          <path d="M65 15 L175 15 L225 130 L15 130 Z" fill="none" stroke="currentColor" stroke-width="3" />
+        </svg>
+        <div class="table-wrap"><table class="answer-table"><thead><tr><th>Pernyataan</th><th>Benar</th><th>Salah</th></tr></thead><tbody>
+          <tr><td>Memiliki sepasang sisi sama panjang.</td><td><input type="radio" name="q10a" aria-label="Benar"></td><td><input type="radio" name="q10a" aria-label="Salah"></td></tr>
+          <tr><td>Memiliki sepasang sisi sejajar tetapi tidak sama panjang.</td><td><input type="radio" name="q10b" aria-label="Benar"></td><td><input type="radio" name="q10b" aria-label="Salah"></td></tr>
+          <tr><td>Kedua diagonalnya sama panjang.</td><td><input type="radio" name="q10c" aria-label="Benar"></td><td><input type="radio" name="q10c" aria-label="Salah"></td></tr>
+          <tr><td>Memiliki dua simetri lipat.</td><td><input type="radio" name="q10d" aria-label="Benar"></td><td><input type="radio" name="q10d" aria-label="Salah"></td></tr>
+        </tbody></table></div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>11.</b> Sebuah bangun datar memiliki 4 sisi, 2 pasang sisi sejajar, 4 sudut siku-siku, dan 2 pasang sisi sama panjang. Bangun yang pasti memiliki semua sifat tersebut adalah …</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q11"> A. Persegi</label><label><input type="radio" name="q11"> B. Persegi panjang</label>
+          <label><input type="radio" name="q11"> C. Jajar genjang</label><label><input type="radio" name="q11"> D. Trapesium</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>12.</b> Sebuah papan pengumuman berbentuk persegi panjang. Jika salah satu sudutnya dipotong lurus, bangun baru yang terbentuk adalah …</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q12"> A. Segitiga</label><label><input type="radio" name="q12"> B. Persegi</label>
+          <label><input type="radio" name="q12"> C. Segilima</label><label><input type="radio" name="q12"> D. Segienam</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>13.</b> Perhatikan susunan kubus satuan berikut. Beri tanda centang pada pernyataan yang benar. <em>(Jawaban benar lebih dari satu)</em></p>
+        <div class="cube-figure" aria-label="Susunan kubus bertingkat: tiga kubus pada alas, dua di atas sisi kiri, dan satu di puncak sisi kiri">
+          <div class="cube-stack"><span class="cube c1"></span><span class="cube c2"></span><span class="cube c3"></span><span class="cube c4"></span><span class="cube c5"></span><span class="cube c6"></span></div>
+          <p>Susunan kubus bertingkat</p>
+        </div>
+        <div class="check-list">
+          <label><input type="checkbox"> Tampak depan membentuk 3 kolom dengan tinggi 3, 2, dan 1 kubus.</label>
+          <label><input type="checkbox"> Tampak atas menunjukkan 6 kotak satuan.</label>
+          <label><input type="checkbox"> Susunan tersebut terdiri dari 6 kubus satuan.</label>
+          <label><input type="checkbox"> Tampak samping membentuk 3 kolom dengan tinggi yang sama.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>14.</b> Kain dengan panjang 0,2 m dipotong menjadi 4 bagian sama panjang. Panjang setiap potongan kain adalah … cm.</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q14"> A. 2</label><label><input type="radio" name="q14"> B. 8</label>
+          <label><input type="radio" name="q14"> C. 4</label><label><input type="radio" name="q14"> D. 5</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>15.</b> Sebuah ember dapat menampung 12 liter air. Jika setiap gelas berisi 250 ml air, banyak gelas yang dapat diisi penuh adalah …</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q15"> A. 24</label><label><input type="radio" name="q15"> B. 36</label>
+          <label><input type="radio" name="q15"> C. 48</label><label><input type="radio" name="q15"> D. 60</label>
+        </div>
+      </article>
+    </section>
+
+    <section class="question-section">
+      <h2><span>03</span> Pengukuran, bangun datar, dan data</h2>
+      <article class="question">
+        <p class="prompt"><b>16.</b> Berat semangka adalah 2 kg dan berat pepaya adalah 1.000 gram. Beri tanda centang pada pernyataan yang benar. <em>(Jawaban benar lebih dari satu)</em></p>
+        <div class="check-list">
+          <label><input type="checkbox"> Berat buah semangka adalah 2 kg.</label>
+          <label><input type="checkbox"> Berat buah pepaya adalah 1 kg.</label>
+          <label><input type="checkbox"> Selisih berat semangka dan pepaya adalah 1 kg.</label>
+          <label><input type="checkbox"> Jumlah berat semangka dan pepaya adalah 4 kg.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>17.</b> Tania membeli tepung dengan berat 3 kg dan 15 ons gula pasir. Tentukan Benar atau Salah untuk setiap pernyataan.</p>
+        <div class="table-wrap"><table class="answer-table"><thead><tr><th>Pernyataan</th><th>Benar</th><th>Salah</th></tr></thead><tbody>
+          <tr><td>Berat tepung dalam satuan gram adalah 3.000 gram.</td><td><input type="radio" name="q17a" aria-label="Benar"></td><td><input type="radio" name="q17a" aria-label="Salah"></td></tr>
+          <tr><td>Berat gula pasir dalam satuan gram adalah 150 gram.</td><td><input type="radio" name="q17b" aria-label="Benar"></td><td><input type="radio" name="q17b" aria-label="Salah"></td></tr>
+          <tr><td>Selisih berat tepung dan gula adalah 1.500 gram.</td><td><input type="radio" name="q17c" aria-label="Benar"></td><td><input type="radio" name="q17c" aria-label="Salah"></td></tr>
+          <tr><td>Jumlah berat tepung dan gula adalah 4.500 gram.</td><td><input type="radio" name="q17d" aria-label="Benar"></td><td><input type="radio" name="q17d" aria-label="Salah"></td></tr>
+        </tbody></table></div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>18.</b> Sebuah bus berangkat pukul 07.00 dan sampai di tujuan pukul 10.25. Lama perjalanan bus adalah … menit.</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q18"> A. 205</label><label><input type="radio" name="q18"> B. 210</label>
+          <label><input type="radio" name="q18"> C. 225</label><label><input type="radio" name="q18"> D. 250</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>19.</b> Sebuah bak penampungan berkapasitas 500 liter terisi penuh dalam waktu 10 menit. Laju aliran pompa air adalah … liter/menit.</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q19"> A. 0,5</label><label><input type="radio" name="q19"> B. 5</label>
+          <label><input type="radio" name="q19"> C. 50</label><label><input type="radio" name="q19"> D. 500</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>20.</b> Beri tanda centang (✓) pada pernyataan yang benar. <em>(Jawaban benar lebih dari satu)</em></p>
+        <div class="check-list">
+          <label><input type="checkbox"> Keliling segitiga sama sisi dengan panjang sisi 6 cm adalah 18 cm.</label>
+          <label><input type="checkbox"> Keliling segitiga sama sisi dengan panjang sisi 8 cm adalah 26 cm.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>21.</b> Rudi memiliki dua meja dengan permukaan berbentuk seperti gambar berikut. Berdasarkan ukuran dan tanda pada gambar, beri tanda centang pada pernyataan yang benar.</p>
+        <div class="desk-figures">
+          <svg class="geometry desk-rectangle" viewBox="0 0 250 150" role="img" aria-label="Persegi panjang ABCD dengan panjang 28 cm dan lebar 15 cm">
+            <rect x="35" y="25" width="180" height="95" fill="none" stroke="currentColor" stroke-width="2" />
+            <text x="22" y="25">D</text><text x="218" y="25">C</text><text x="22" y="139">A</text><text x="218" y="139">B</text>
+            <text x="105" y="143">28 cm</text><text x="0" y="80">15 cm</text>
+          </svg>
+          <svg class="geometry desk-square" viewBox="0 0 145 145" role="img" aria-label="Persegi PQRS dengan sisi-sisi sama panjang">
+            <rect x="27" y="25" width="90" height="90" fill="none" stroke="currentColor" stroke-width="2" />
+            <text x="17" y="22">S</text><text x="120" y="22">R</text><text x="17" y="132">P</text><text x="120" y="132">Q</text>
+            <path d="M70 25v10 M70 105v10 M27 68h10 M107 68h10" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </div>
+        <div class="check-list">
+          <label><input type="checkbox"> Keliling permukaan meja persegi panjang adalah 86 cm.</label>
+          <label><input type="checkbox"> Keliling permukaan meja persegi panjang adalah 56 cm.</label>
+          <label><input type="checkbox"> Meja persegi memiliki empat sisi sama panjang.</label>
+          <label><input type="checkbox"> Keliling meja persegi dapat ditentukan tanpa mengetahui panjang sisinya.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>22.</b> Perhatikan gambar berikut. Luas bangun tersebut adalah … cm².</p>
+        <svg class="geometry trapezoid-area" viewBox="0 0 300 165" role="img" aria-label="Trapesium dengan sisi sejajar 16 cm dan 29 cm, serta tinggi 8 cm">
+          <path d="M35 25 H165 L265 135 H35 Z" fill="#f5f7fb" stroke="currentColor" stroke-width="2" />
+          <path d="M165 25 V135" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 4" />
+          <text x="85" y="18">16 cm</text><text x="130" y="158">29 cm</text><text x="0" y="85">8 cm</text>
+        </svg>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q22"> A. 52</label><label><input type="radio" name="q22"> B. 128</label>
+          <label><input type="radio" name="q22"> C. 180</label><label><input type="radio" name="q22"> D. 186</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>23.</b> Lantai sebuah kamar berbentuk persegi panjang dengan panjang 75 cm dan lebar 120 cm. Luas lantai kamar tersebut adalah … cm².</p>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q23"> A. 195</label><label><input type="radio" name="q23"> B. 390</label>
+          <label><input type="radio" name="q23"> C. 4.500</label><label><input type="radio" name="q23"> D. 9.000</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>24.</b> Perhatikan gambar segitiga berikut. Beri tanda centang (✓) pada pernyataan yang benar.</p>
+        <svg class="geometry triangle" viewBox="0 0 220 150" role="img" aria-label="Segitiga DEF dengan sudut E di bagian atas">
+          <path d="M45 125 L110 20 L190 125 Z" fill="none" stroke="currentColor" stroke-width="3" />
+          <path d="M101 35 Q110 42 119 35" fill="none" stroke="currentColor" stroke-width="1.5" />
+          <text x="30" y="145">D</text><text x="105" y="17">E</text><text x="196" y="145">F</text>
+        </svg>
+        <div class="check-list">
+          <label><input type="checkbox"> Sudut yang ditunjukkan adalah sudut siku-siku.</label>
+          <label><input type="checkbox"> Sudut yang ditunjukkan adalah sudut tumpul.</label>
+          <label><input type="checkbox"> Titik sudut pada sudut yang ditunjukkan adalah F.</label>
+          <label><input type="checkbox"> Titik sudut pada sudut yang ditunjukkan adalah E.</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>25.</b> Mina membeli 3 buku tulis dengan harga satuan Rp3.950,00 dan 2 bolpoin dengan harga satuan Rp2.900,00. Tentukan Benar atau Salah untuk setiap perkiraan berikut.</p>
+        <div class="table-wrap"><table class="answer-table"><thead><tr><th>Pernyataan</th><th>Benar</th><th>Salah</th></tr></thead><tbody>
+          <tr><td>Estimasi harga 1 buku tulis adalah Rp3.000,00.</td><td><input type="radio" name="q25a" aria-label="Benar"></td><td><input type="radio" name="q25a" aria-label="Salah"></td></tr>
+          <tr><td>Estimasi harga 2 bolpoin adalah Rp3.000,00.</td><td><input type="radio" name="q25b" aria-label="Benar"></td><td><input type="radio" name="q25b" aria-label="Salah"></td></tr>
+          <tr><td>Estimasi harga 3 buku tulis adalah Rp10.000,00.</td><td><input type="radio" name="q25c" aria-label="Benar"></td><td><input type="radio" name="q25c" aria-label="Salah"></td></tr>
+          <tr><td>Estimasi uang yang harus dibawa adalah Rp18.000,00.</td><td><input type="radio" name="q25d" aria-label="Benar"></td><td><input type="radio" name="q25d" aria-label="Salah"></td></tr>
+        </tbody></table></div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>26.</b> Petugas kesehatan mencatat berat badan siswa: 5 anak memiliki berat 18 kg, 3 anak 19 kg, 6 anak 20 kg, dan 12 anak 21 kg. Pilih diagram gambar yang sesuai. <em>(Setiap 🙂 mewakili 1 anak.)</em></p>
+        <div class="pictogram-options">
+          <label class="pictogram-choice"><input type="radio" name="q26"><b>A.</b><span>18 kg&nbsp; 🙂🙂🙂🙂🙂<br>19 kg&nbsp; 🙂🙂🙂<br>20 kg&nbsp; 🙂🙂🙂🙂🙂🙂<br>21 kg&nbsp; 🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</span></label>
+          <label class="pictogram-choice"><input type="radio" name="q26"><b>B.</b><span>18 kg&nbsp; 🙂🙂🙂🙂<br>19 kg&nbsp; 🙂🙂🙂<br>20 kg&nbsp; 🙂🙂🙂🙂🙂🙂<br>21 kg&nbsp; 🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</span></label>
+          <label class="pictogram-choice"><input type="radio" name="q26"><b>C.</b><span>18 kg&nbsp; 🙂🙂🙂🙂🙂<br>19 kg&nbsp; 🙂🙂🙂🙂<br>20 kg&nbsp; 🙂🙂🙂🙂🙂🙂<br>21 kg&nbsp; 🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</span></label>
+          <label class="pictogram-choice"><input type="radio" name="q26"><b>D.</b><span>18 kg&nbsp; 🙂🙂🙂🙂🙂<br>19 kg&nbsp; 🙂🙂🙂<br>20 kg&nbsp; 🙂🙂🙂🙂🙂🙂<br>21 kg&nbsp; 🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂🙂</span></label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>27.</b> Perhatikan diagram batang profesi orang tua siswa berikut. Profesi yang paling sedikit adalah …</p>
+        <div class="chart-wrap">
+          <svg class="bar-chart" viewBox="0 0 480 235" role="img" aria-label="Diagram batang: PNS 8, TNI 5, petani 15, guru 4, wiraswasta 2 orang">
+            <path d="M45 15 V185 H465" fill="none" stroke="#52617a" stroke-width="2" />
+            <g stroke="#dbe2ed" stroke-width="1"><path d="M45 155H465"/><path d="M45 125H465"/><path d="M45 95H465"/><path d="M45 65H465"/><path d="M45 35H465"/></g>
+            <g fill="#4169d8"><rect x="75" y="105" width="45" height="80"/><rect x="155" y="135" width="45" height="50"/><rect x="235" y="35" width="45" height="150"/><rect x="315" y="145" width="45" height="40"/><rect x="395" y="165" width="45" height="20"/></g>
+            <g fill="#243047" font-size="12" text-anchor="end"><text x="38" y="189">0</text><text x="38" y="159">3</text><text x="38" y="129">6</text><text x="38" y="99">9</text><text x="38" y="69">12</text><text x="38" y="39">15</text></g>
+            <g fill="#243047" font-size="11" text-anchor="middle"><text x="97" y="204">PNS</text><text x="177" y="204">TNI</text><text x="257" y="204">PETANI</text><text x="337" y="204">GURU</text><text x="417" y="204">WIRASWASTA</text></g>
+          </svg>
+        </div>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q27"> A. PNS</label><label><input type="radio" name="q27"> B. Petani</label>
+          <label><input type="radio" name="q27"> C. Wiraswasta</label><label><input type="radio" name="q27"> D. Guru</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>28.</b> Perhatikan data hobi siswa kelas 5 dan kelas 6 berikut. Jumlah seluruh siswa adalah … anak.</p>
+        <div class="table-wrap"><table class="fruit-table">
+          <thead><tr><th>Hobi</th><th>Jumlah siswa</th></tr></thead><tbody>
+            <tr><td>Sepak bola</td><td>3</td></tr><tr><td>Bola voli</td><td>3</td></tr><tr><td>Bulu tangkis</td><td>12</td></tr>
+            <tr><td>Menyanyi</td><td>15</td></tr><tr><td>Menari</td><td>10</td></tr><tr><td>Menggambar</td><td>17</td></tr>
+          </tbody>
+        </table></div>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q28"> A. 40</label><label><input type="radio" name="q28"> B. 50</label>
+          <label><input type="radio" name="q28"> C. 60</label><label><input type="radio" name="q28"> D. 70</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>29.</b> Perhatikan diagram gambar berikut. Setiap gambar pohon mewakili 4 pohon. Jumlah seluruh pohon adalah …</p>
+        <div class="table-wrap"><table class="pictograph-table">
+          <thead><tr><th>Jenis pohon</th><th>Gambar</th></tr></thead><tbody>
+            <tr><th>Jambu</th><td>🌳 🌳 🌳</td></tr><tr><th>Mangga</th><td>🌳 🌳</td></tr>
+            <tr><th>Kelengkeng</th><td>🌳 🌳 🌳 🌳</td></tr><tr><th>Rambutan</th><td>🌳 🌳 🌳 🌳</td></tr>
+            <tr><th>Alpukat</th><td>🌳 🌳</td></tr>
+          </tbody></table></div>
+        <div class="choice-grid compact">
+          <label><input type="radio" name="q29"> A. 40</label><label><input type="radio" name="q29"> B. 50</label>
+          <label><input type="radio" name="q29"> C. 60</label><label><input type="radio" name="q29"> D. 70</label>
+        </div>
+      </article>
+      <article class="question">
+        <p class="prompt"><b>30.</b> Perhatikan diagram batang nilai ulangan Bahasa Indonesia kelas VI berikut. Berdasarkan informasi pada diagram, tentukan Benar atau Salah untuk setiap pernyataan.</p>
+        <div class="chart-wrap">
+          <svg class="bar-chart" viewBox="0 0 480 255" role="img" aria-label="Diagram batang nilai siswa: nilai 6 ada 4 siswa, nilai 7 ada 6 siswa, nilai 8 ada 6 siswa, nilai 9 ada 8 siswa, dan nilai 10 ada 2 siswa">
+            <path d="M55 20 V200 H455" fill="none" stroke="#52617a" stroke-width="2" />
+            <g stroke="#dbe2ed" stroke-width="1">
+              <path d="M55 182H455"/><path d="M55 164H455"/><path d="M55 146H455"/><path d="M55 128H455"/><path d="M55 110H455"/>
+              <path d="M55 92H455"/><path d="M55 74H455"/><path d="M55 56H455"/><path d="M55 38H455"/><path d="M55 20H455"/>
+            </g>
+            <g fill="#69758a" font-size="11" text-anchor="end">
+              <text x="47" y="204">0</text><text x="47" y="186">1</text><text x="47" y="168">2</text><text x="47" y="150">3</text><text x="47" y="132">4</text>
+              <text x="47" y="114">5</text><text x="47" y="96">6</text><text x="47" y="78">7</text><text x="47" y="60">8</text><text x="47" y="42">9</text><text x="47" y="24">10</text>
+            </g>
+            <g fill="#52617a"><rect x="85" y="128" width="44" height="72"/><rect x="157" y="92" width="44" height="108"/><rect x="229" y="92" width="44" height="108"/><rect x="301" y="56" width="44" height="144"/><rect x="373" y="164" width="44" height="36"/></g>
+            <g fill="#243047" font-size="12" text-anchor="middle"><text x="107" y="218">6</text><text x="179" y="218">7</text><text x="251" y="218">8</text><text x="323" y="218">9</text><text x="395" y="218">10</text><text x="255" y="246">Nilai Siswa</text></g>
+            <text x="14" y="112" fill="#243047" font-size="12" text-anchor="middle" transform="rotate(-90 14 112)">Banyak Siswa</text>
+          </svg>
+        </div>
+        <div class="table-wrap"><table class="answer-table"><thead><tr><th>Pernyataan</th><th>Benar</th><th>Salah</th></tr></thead><tbody>
+          <tr><td>Nilai tertinggi ulangan Bahasa Indonesia adalah 9.</td><td><input type="radio" name="q30a" aria-label="Benar"></td><td><input type="radio" name="q30a" aria-label="Salah"></td></tr>
+          <tr><td>Murid dengan nilai 6 dan 8 ada 10 orang.</td><td><input type="radio" name="q30b" aria-label="Benar"></td><td><input type="radio" name="q30b" aria-label="Salah"></td></tr>
+          <tr><td>Murid dengan nilai 10 ada 1 orang.</td><td><input type="radio" name="q30c" aria-label="Benar"></td><td><input type="radio" name="q30c" aria-label="Salah"></td></tr>
+          <tr><td>Banyak murid yang ikut ulangan ada 26 orang.</td><td><input type="radio" name="q30d" aria-label="Benar"></td><td><input type="radio" name="q30d" aria-label="Salah"></td></tr>
+        </tbody></table></div>
+      </article>
+    </section>
+
+    <section class="score-panel" aria-labelledby="scoreHeading">
+      <h2 id="scoreHeading">Hasil pengerjaan</h2>
+      <p id="scoreMessage" aria-live="polite">Isi identitas dan jawab semua soal, lalu pilih “Periksa & simpan nilai”.</p>
+      <div class="score-actions">
+        <button id="submitScore" type="button">Periksa &amp; simpan nilai</button>
+        <button type="button" class="print-button" onclick="window.print()">Cetak worksheet</button>
+      </div>
+    </section>
+    <footer class="worksheet-footer"><span>Matematika · Paket Tryout 1</span><span>Periksa kembali jawabanmu sebelum dikumpulkan.</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
